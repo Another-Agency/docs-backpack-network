@@ -1,9 +1,11 @@
 {
-  "index": "Home",
-  "how": "How to use",
-  "what": "Our Services",
-  "architecture": {
-    "title": "About",
+  "index": "Index",
+  "how": "Narrative",
+  "what": "Services",
+  "new": "Products",
+  "swag": "Shop",
+  "partners": {
+    "title": "Partners",
     "type": "page"
   },
   "contact": {
