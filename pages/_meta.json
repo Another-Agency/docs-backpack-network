@@ -1,9 +1,9 @@
 {
-  "index": "Index",
-  "how": "Narrative",
-  "what": "Services",
-  "new": "Products",
-  "swag": "Shop",
+  "home": "Home",
+  "rapid-setup-guide": "Rapid Setup Guide",
+  "latest-updates": "Latest Updates",
+  "onboarding": "Onboarding",
+  "swag": "Swag",
   "partners": {
     "title": "Partners",
     "type": "page"
