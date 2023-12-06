@@ -3,9 +3,11 @@
   "rapid-setup-guide": "Rapid Setup Guide",
   "latest-updates": "Latest Updates",
   "onboarding": "Onboarding",
-  "swag": "Swag",
-  "partners": {
-    "title": "Partners",
+  "developer-resources": "Developer Resources",
+  "community": "Community",
+  "support": "Support",
+  "swag": {
+    "title": "Swag",
     "type": "page"
   },
   "contact": {
