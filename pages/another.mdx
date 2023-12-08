@@ -1,10 +1,34 @@
-# Another Page
+# Domain Model
 
-```js filename="demo.js" {3} copy
-let a = 1;
+import { Tabs } from 'nextra/components'
 
-console.log(a);
+<Tabs items= {['Account', 'Pylon', 'Network']}>
+  <Tabs.Tab>
+  ```js filename="account.d.ts" {1} copy
+  type Account {
+  persona: Persona
+  contract: Contract
+  keyType: KeyType
+  sigType: SigType
+  plugins: [Plugin]
+}
 ```
+  </Tabs.Tab>
+  <Tabs.Tab>  
+  ```js filename="account.d.ts" {1} copy
+  type Pylon {
+  credentials: Credentials
+  transactionVector: TransactionVector // implies a transaction with a relative destination and amount that converge to a destination and amount through a Pylon gateway
+  destination: Destination
+  cost: Cost
+  session: Session
+  instructions: Instructions
+  
+}
+```
+</Tabs.Tab>
+  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+</Tabs>
 
 ## Component
 
