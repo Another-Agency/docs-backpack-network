@@ -1,0 +1,30 @@
+# Overview
+
+
+## Persona
+
+We have different behaviors and requirements with our money based on how we're thinking about it. For example when I'm shopping my needs as a spender are different than when I'm saving. Money is a game and these are partly aimed at game mechanics. Remembering it's a game can go along way in helping you want to win the game. 
+
+The following components determine what your user type is capable of doing with money:
+- Jurisdiction: government you respect or ackowledge will determine the type of KYC / KYB our system will need
+- Records: your personal data you want to manage this is where your kyc and kyb will be stored, with our system you are custodian of your records as well as your assets
+- Plugins: the types of ways your account can work with money based on your personal data, plugins are provided by our network of partners and builders
+- Assets: self explanatory, we focus the UI around USDC so everything is by default denominated in that, we'll be adding customization to these features as we go but most humans was values based on $1
+- Loyalty: rewards for user behaviors, i like to think of these like sponsorship rewards this feature is aimed at Q4 2024
+
+
+## Contracts
+
+When you establish a relationship with a bank you're really just opening an account as an entry to a database ledger, a smart contract is an entry to a blockchain ledger. A blockchain and a database don't compare 1:1 but the idea is the same. There are clear advantages in security and universal accessibility to a blockchain that are fundamentally at odds with the designs of a database which prevent equivalent security.
+
+The contracts are smart because we can program them to chain logical ideas and events together. Why this matters to you is that this allows us to take familiar operations with banks and money and compress the steps down to a single action or push of a button if the case suits.
+
+There are standards to contracts. These can get very technical but what they impact are the capabilities. It's likely we will continue to adopt more types of contract designs as we grow and less likely we will unify around one type.
+
+### EIP-4337
+
+This design allows for custom security models and paymasters. The security model is covered in its own section found here.
+- paymasters allow for transaction fees to be paid by a third partly
+- we use this to prefund and cover certain types of gas fees users can run into through use of service
+    - should we be mad at gas fees? No, they're super important to maintaining usability of networks, if they were free the congestion on the network would be consumed by all manners of spam, please see all of the internet before crypto.
+- audited and open source contract and account design can be found here

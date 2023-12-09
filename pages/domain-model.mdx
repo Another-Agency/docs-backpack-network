@@ -1,0 +1,55 @@
+# Domain Model
+
+import { Tabs } from 'nextra/components'
+
+<Tabs items= {['Account', 'Pylon', 'Network']}>
+  <Tabs.Tab>
+  ```js filename="account.d.ts" {1} copy
+  type Account {
+    persona: Persona
+    contract: Contract
+    keyType: KeyType
+    sigType: SigType
+    plugins: [Plugin]
+}
+```
+  </Tabs.Tab>
+  <Tabs.Tab>  
+  ```js filename="account.d.ts" {1} copy
+  type Pylon {
+    session: Session
+    credentials: Credentials
+    paymentSchema: PaymentSchema
+    destination: Destination
+    cost: Cost
+    instructions: Instructions
+  
+}
+```
+</Tabs.Tab>
+  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+</Tabs>
+
+## Component
+
+import { useState } from 'react'
+
+{/* Import CSS modules */}
+import styles from '../components/counters.module.css'
+
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
+    </div>
+  );
+};
+
+<Counter/>
+
+## External Component
+
+import Counters from '../components/counters'
+
+<Counters />

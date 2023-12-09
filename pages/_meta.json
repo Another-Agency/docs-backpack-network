@@ -1,11 +1,14 @@
 {
-  "home": "Home",
+  "index": "Home",
   "rapid-setup-guide": "Rapid Setup Guide",
   "latest-updates": "Latest Updates",
+  "the-model": "The Model",
   "onboarding": "Onboarding",
-  "swag": "Swag",
-  "partners": {
-    "title": "Partners",
+  "developer-resources": "Developer Resources",
+  "community": "Community",
+  "support": "Support",
+  "swag": {
+    "title": "Swag",
     "type": "page"
   },
   "contact": {
