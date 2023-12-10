@@ -1,7 +1,12 @@
 # Overview
 
+Backpack is the branded account system and designs that are coordinated to best work with our self banking services. These technologies are built on open source software, it's possible to customize our designs to work with and differently than what we have built. 
+Accounts are the main way to interact with the blockchain. They are used to sign transactions and to store funds. Accounts are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
+
 
 ## Persona
+
+A persona is a special type of account that is used to represent a user. It is identified by a username, which is a string of 3 to 16 characters. The username is used to derive the address of the persona. The address of a persona is the same as the address of the account that created it.
 
 We have different behaviors and requirements with our money based on how we're thinking about it. For example when I'm shopping my needs as a spender are different than when I'm saving. Money is a game and these are partly aimed at game mechanics. Remembering it's a game can go along way in helping you want to win the game. 
 
@@ -14,6 +19,8 @@ The following components determine what your user type is capable of doing with 
 
 
 ## Contracts
+
+Contracts are special accounts that contain code. They are used to store and execute code on the blockchain. Contracts are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
 
 When you establish a relationship with a bank you're really just opening an account as an entry to a database ledger, a smart contract is an entry to a blockchain ledger. A blockchain and a database don't compare 1:1 but the idea is the same. There are clear advantages in security and universal accessibility to a blockchain that are fundamentally at odds with the designs of a database which prevent equivalent security.
 
@@ -31,4 +38,36 @@ This design allows for custom security models and paymasters. The security model
 
 ## Key Design
 
+Keys are used to sign transactions. They are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
+
+Like physical keys with different shapes and sizes, keys can be selected to fit the security and the UX needed for the use case. The following are the types of keys we use and how they're used.
+
+### Private Key (not used by Backpack)
+
+This is the most common key you'll see in crypto. It's a long string of characters that is used to sign transactions. It's the most secure key because it's not stored anywhere but in your head. It's also the most difficult to use because it's not stored anywhere but in your head. 
+
+### Mnemonic Phrase (not used by Backpack)
+
+This is a string of words that is used to generate a private key. It's a little less secure than a private key because it's stored in a file on your computer. It's a little easier to use because it's stored in a file on your computer. It's still a pain in the ass because you can loose it easily and be compromised when using it.
+
+### Multi Party Compute (MPC) (not used by Backpack)
+
+MPC is used to create a type of multi-factor confirmation for backing up keys and managing transaction security. A valid complaint regarding this key design is the way the keys are split up and shared which can compromise both security and usability depending upon how it was implemented.
+
+### Threshold Signature Scheme (TSS) 
+
+Another type of MPC but with more design considerations around key management with respect to ux and security
+
 ## Signature Design
+
+Just like a signature in the phyisical world, these signatures are used to bind your `word` to a transaction and like keys they can be designed around security and usability.
+
+The signature scheme is used to authenticate the user through biometric data. It is based on the ECDSA algorithm and uses the secp256k1 curve. The signature scheme is used to sign transactions and to authenticate the user through biometric data.
+
+## Plugin Module
+
+Plugins are used to extend the core functionality of the backpack financial and blockchain services platform. They are used to add new features to the platform and to integrate with external services.
+
+## AI Support
+
+AI is the integrated support agent. We train our AI using our local data and the data from the blockchain. We use AI to provide support to our users and to improve our services.
