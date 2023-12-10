@@ -1,73 +1,36 @@
-# Overview
+# Accounts Overview
 
-Backpack is the branded account system and designs that are coordinated to best work with our self banking services. These technologies are built on open source software, it's possible to customize our designs to work with and differently than what we have built. 
-Accounts are the main way to interact with the blockchain. They are used to sign transactions and to store funds. Accounts are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
+Backpack integrates the functionality of a bank into the very fabric of an account, powered by blockchain's transparent ledger system. Our accounts are the primary interface for users to interact with this ledger, holding assets securely and facilitating transactions with ease.
 
+## Persona: The User Identity Foundation
+Persona in Backpack serves as the cornerstone of user identity within our ecosystem, anchoring the user experience in trust and transactional fluidity. Here's a snapshot of what this entails:
 
-## Persona
+- **Records**: An innovative approach to transaction data, offering enriched financial interactions.
+- **Assets**: A focus on clarity and simplicity for seamless asset management.
+- **Loyalty**: A commitment to rewarding user engagement, with plans for further sophistication by Q4 2024.
 
-A persona is a special type of account that is used to represent a user. It is identified by a username, which is a string of 3 to 16 characters. The username is used to derive the address of the persona. The address of a persona is the same as the address of the account that created it.
+Personas mirror the multifaceted nature of our financial lives, acknowledging the different roles we play, from spender to saver, each with unique requirements.
 
-We have different behaviors and requirements with our money based on how we're thinking about it. For example when I'm shopping my needs as a spender are different than when I'm saving. Money is a game and these are partly aimed at game mechanics. Remembering it's a game can go along way in helping you want to win the game. 
+## Contracts: Programmable Financial Logic
+Contracts in Backpack aren't just code repositories; they are sophisticated financial instruments designed to streamline complex banking operations into single actions. Embracing standards like EIP-4337, we offer:
 
-The following components determine what your user type is capable of doing with money:
-- Jurisdiction: government you respect or ackowledge will determine the type of KYC / KYB our system will need
-- Records: your personal data you want to manage this is where your kyc and kyb will be stored, with our system you are custodian of your records as well as your assets
-- Plugins: the types of ways your account can work with money based on your personal data, plugins are provided by our network of partners and builders
-- Assets: self explanatory, we focus the UI around USDC so everything is by default denominated in that, we'll be adding customization to these features as we go but most humans was values based on $1
-- Loyalty: rewards for user behaviors, i like to think of these like sponsorship rewards this feature is aimed at Q4 2024
+- **Custom Security Models**: Prioritizing user security with customizable parameters.
+- **Gas Fee Management**: Innovatively utilizing paymasters to absorb transaction fees, preserving network integrity without burdening users.
 
+## Key Design: Secure Access Across Platforms
+Our Key Design is dedicated to balancing security with user-friendly experiences across multiple touchpoints, including:
 
-## Contracts
+- **Platform Integration**: Key management that's as seamless on mobile as it is on desktop.
+- **Intuitive UX**: A focus on making cryptographic key management straightforward.
+- **Robust Recovery Options**: Ensuring users can recover access without compromising security.
 
-Contracts are special accounts that contain code. They are used to store and execute code on the blockchain. Contracts are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
+While common crypto keys like Private Keys and Mnemonic Phrases aren't in our toolkit, we've opted for more advanced solutions like Threshold Signature Scheme (TSS) to enhance security without sacrificing usability.
 
-When you establish a relationship with a bank you're really just opening an account as an entry to a database ledger, a smart contract is an entry to a blockchain ledger. A blockchain and a database don't compare 1:1 but the idea is the same. There are clear advantages in security and universal accessibility to a blockchain that are fundamentally at odds with the designs of a database which prevent equivalent security.
+## Signature Design: Authenticating Transactions
+Our Signature Design parallels physical signatures, binding commitment to transactions, optimized for both security and user experience across different blockchain networks.
 
-The contracts are smart because we can program them to chain logical ideas and events together. Why this matters to you is that this allows us to take familiar operations with banks and money and compress the steps down to a single action or push of a button if the case suits.
+## Plugin Design: Extensibility and Evolution
+Our platform is inherently extendable, ready to evolve with new features and services as our ecosystem grows. Plugin Design is the architectural blueprint that allows for this seamless integration and expansion.
 
-There are standards to contracts. These can get very technical but what they impact are the capabilities. It's likely we will continue to adopt more types of contract designs as we grow and less likely we will unify around one type.
-
-### EIP-4337
-
-This design allows for custom security models and paymasters. The security model is covered in its own section found here.
-- paymasters allow for transaction fees to be paid by a third partly
-- we use this to prefund and cover certain types of gas fees users can run into through use of service
-    - should we be mad at gas fees? No, they're super important to maintaining usability of networks, if they were free the congestion on the network would be consumed by all manners of spam, please see all of the internet before crypto.
-- audited and open source contract and account design can be found here
-
-## Key Design
-
-Keys are used to sign transactions. They are identified by their address, which is a 20-byte identifier derived from the public key. The address is usually represented as a hexadecimal string of 40 characters.
-
-Like physical keys with different shapes and sizes, keys can be selected to fit the security and the UX needed for the use case. The following are the types of keys we use and how they're used.
-
-### Private Key (not used by Backpack)
-
-This is the most common key you'll see in crypto. It's a long string of characters that is used to sign transactions. It's the most secure key because it's not stored anywhere but in your head. It's also the most difficult to use because it's not stored anywhere but in your head. 
-
-### Mnemonic Phrase (not used by Backpack)
-
-This is a string of words that is used to generate a private key. It's a little less secure than a private key because it's stored in a file on your computer. It's a little easier to use because it's stored in a file on your computer. It's still a pain in the ass because you can loose it easily and be compromised when using it.
-
-### Multi Party Compute (MPC) (not used by Backpack)
-
-MPC is used to create a type of multi-factor confirmation for backing up keys and managing transaction security. A valid complaint regarding this key design is the way the keys are split up and shared which can compromise both security and usability depending upon how it was implemented.
-
-### Threshold Signature Scheme (TSS) 
-
-Another type of MPC but with more design considerations around key management with respect to ux and security
-
-## Signature Design
-
-Just like a signature in the phyisical world, these signatures are used to bind your `word` to a transaction and like keys they can be designed around security and usability.
-
-The signature scheme is used to authenticate the user through biometric data. It is based on the ECDSA algorithm and uses the secp256k1 curve. The signature scheme is used to sign transactions and to authenticate the user through biometric data.
-
-## Plugin Module
-
-Plugins are used to extend the core functionality of the backpack financial and blockchain services platform. They are used to add new features to the platform and to integrate with external services.
-
-## AI Support
-
-AI is the integrated support agent. We train our AI using our local data and the data from the blockchain. We use AI to provide support to our users and to improve our services.
+## AI Support: Intelligent and Adaptive Assistance
+We harness the power of AI to provide real-time support and enhance our offerings, leveraging data from both local sources and the blockchain to ensure our support systems are as sophisticated as our users' needs.
