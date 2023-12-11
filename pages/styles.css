@@ -32,7 +32,7 @@
     --transition-ease-in-out-fast: all 0.1s ease-in-out
 }
 
-body {
+.light body {
     background: linear-gradient(to bottom,
             rgba(241, 5, 5, 0.387) 100%,
             rgb(255, 255, 255) 300px),
@@ -41,10 +41,10 @@ body {
 }
 
 
-.dark body {
+/* .dark body {
     background: linear-gradient(to bottom,
             rgba(69, 120, 11, 0.821) 20%,
             #a53636f2 300px),
         fixed 0 0 / 20px 20px radial-gradient(#313131 1px, transparent 0),
         fixed 10px 10px / 20px 20px radial-gradient(#313131 1px, transparent 0);
-}
+} */
