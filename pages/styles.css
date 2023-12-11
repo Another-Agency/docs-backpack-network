@@ -1,0 +1,50 @@
+:root {
+
+    --primary-color: #d61f1f;
+    --secondary-color: #d00b0b;
+    --text-color: #fff;
+    --text-color-light: #ccc;
+    --text-color-dark: #000;
+    --bg-color: #fff;
+    --bg-color-dark: #111;
+    --border-color: #ccc;
+    --border-color-dark: #313131;
+    --border-radius: 5px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --box-shadow-dark: 0 0 10px rgba(255, 255, 255, 0.2);
+    --transition: all 0.3s ease-in-out;
+    --transition-slow: all 0.5s ease-in-out;
+    --transition-fast: all 0.1s ease-in-out;
+    --transition-cubic: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-cubic-slow: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-cubic-fast: all 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-ease: all 0.3s ease;
+    --transition-ease-slow: all 0.5s ease;
+    --transition-ease-fast: all 0.1s ease;
+    --transition-ease-in: all 0.3s ease-in;
+    --transition-ease-in-slow: all 0.5s ease-in;
+    --transition-ease-in-fast: all 0.1s ease-in;
+    --transition-ease-out: all 0.3s ease-out;
+    --transition-ease-out-slow: all 0.5s ease-out;
+    --transition-ease-out-fast: all 0.1s ease-out;
+    --transition-ease-in-out: all 0.3s ease-in-out;
+    --transition-ease-in-out-slow: all 0.5s ease-in-out;
+    --transition-ease-in-out-fast: all 0.1s ease-in-out
+}
+
+.light body {
+    background: linear-gradient(to bottom,
+            rgba(241, 5, 5, 0.387) 100%,
+            rgb(255, 255, 255) 300px),
+        fixed 0 0 / 20px 20px radial-gradient(#ff00c7 10px, transparent 0),
+        fixed 10px 10px / 20px 20px radial-gradient(#ff00c7 1px, transparent 0);
+}
+
+
+/* .dark body {
+    background: linear-gradient(to bottom,
+            rgba(69, 120, 11, 0.821) 20%,
+            #a53636f2 300px),
+        fixed 0 0 / 20px 20px radial-gradient(#313131 1px, transparent 0),
+        fixed 10px 10px / 20px 20px radial-gradient(#313131 1px, transparent 0);
+} */
